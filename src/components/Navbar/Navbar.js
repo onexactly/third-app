@@ -1,12 +1,10 @@
 import React, { useState } from 'react';
-import { FaRProject, FaTimes } from 'react-icons/fa';
+import { FaTimes } from 'react-icons/fa';
 import { CgMenuRight } from 'react-icons/cg';
 import { IconContext } from 'react-icons';
 import {
 	Nav,
 	NavbarContainer,
-	NavLogo,
-	NavIcon,
 	MobileIcon,
 	NavMenu,
 	NavLinks,
@@ -46,11 +44,6 @@ const Navbar = () => {
 		<IconContext.Provider value={{ color: '#fff' }}>
 			<Nav>
 				<NavbarContainer>
-                    <FaRProject></FaRProject>
-					<NavLogo to="/">
-						<NavIcon src="./assets/logo.png" alt="logo" />
-						Delta
-					</NavLogo>
 					<MobileIcon onClick={handleClick}>
 						{show ? <FaTimes /> : <CgMenuRight />}
 					</MobileIcon>
